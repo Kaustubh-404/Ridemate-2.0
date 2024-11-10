@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Mobile-specific styles */
+body {
+  @apply antialiased touch-manipulation overflow-x-hidden;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Status bar styling */
+.status-bar {
+  @apply h-6 bg-white dark:bg-gray-900 fixed top-0 left-0 right-0 z-50;
+}
+
+/* Mobile app header */
+.app-header {
+  @apply fixed top-6 left-0 right-0 h-12 flex items-center justify-between px-4 bg-white dark:bg-gray-900 z-40 border-b border-gray-200 dark:border-gray-800;
+}
+
+/* Mobile container */
+.mobile-container {
+  @apply max-w-md mx-auto min-h-screen bg-gray-50 dark:bg-gray-900 pb-16 pt-20;
+}
+
+/* Bottom nav styling */
+.bottom-nav {
+  @apply fixed bottom-0 left-0 right-0 bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800 z-50;
+}
+
+/* Pull to refresh indicator */
+.pull-indicator {
+  @apply w-full flex justify-center items-center py-4 text-gray-500;
+}
+
+/* Mobile button */
+.mobile-button {
+  @apply active:scale-95 transform transition-transform touch-manipulation;
+}
